@@ -1,0 +1,25 @@
+class armstrong 
+{
+	public static void main(String[] args) 
+	{
+		int a=153;
+		int count=0,temp=a,sum=0,n=temp;
+		while(a>0)
+		{
+			a=a/10;
+			count++;
+		}
+	
+			while(temp>0){
+			int x=temp%10;
+			int ans=1;
+			for(int j=1;j<=count;j++)
+			{
+				ans=ans*x;
+			}
+			sum=sum+ans;
+			temp/=10;
+		}
+		System.out.println(sum==n ? "Armstrong number":"Not Armstrong");
+	}
+}

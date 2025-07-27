@@ -1,0 +1,26 @@
+class ball 
+{
+	private double radius;
+	ball(){}
+	public ball(double radius)
+	{
+		this.radius=radius;
+	}
+	public double getradius()
+	{
+		return radius;
+	}
+	public double setradius(double radius())
+	{
+		this.radius=radius;
+	}
+	class basketball extends ball
+	{
+		String game="Basketball";
+	}
+	class tennis extends ball
+	{
+		String game="tennisball";
+	}
+}   
+             b b         e       

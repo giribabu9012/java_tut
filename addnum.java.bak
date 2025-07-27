@@ -1,0 +1,15 @@
+class addnum 
+{
+	public static void main(String[] args) 
+	{
+		int a=123;
+		int temp=0;
+		while(a>0)
+			{
+				int b=a%10;
+				temp=temp+b;
+				a=a/10;
+			}
+		System.out.println(temp);
+	}
+}

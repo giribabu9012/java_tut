@@ -1,0 +1,39 @@
+class bike1 
+{
+	private String name;
+	private String color;
+	private double price;
+	private engine e;
+	static String owner="Giri";
+	public bike1(String name,String color,double price,engine e)
+	{
+		this.name=name;
+		this.color=color;
+		this.price=price;
+		this.e=e;
+	}
+	public String getname()
+	{
+		return name;
+	}
+	public String getcolor()
+	{
+		return color;
+	}
+	public double getprice()
+	{
+		return price;
+	}
+	public engine gete()
+	{
+		return e;
+	}
+	public void bikedetails()
+	{
+		System.out.println("bike name:"+name);
+		System.out.println("bike color:"+color);
+		System.out.println("bike price:"+price);
+	}
+}
+		
+

@@ -1,0 +1,24 @@
+import java.util.*;
+class ascii 
+{
+	public static int demo(int f,int g)
+	{
+		int c=(int)f;
+		int d=(int)g;
+	//	int e=a+b;
+		int e=c+d;
+		System.out.println(e);
+	
+	return e;
+	}
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+		{
+		System.out.println("Enter a first number:");
+		char f=sc.next().charAt(0);
+		System.out.println("Enter a second number:");
+		char g=sc.next().charAt(0);
+		demo(f,g);
+		}
+	}
+

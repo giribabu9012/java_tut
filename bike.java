@@ -1,0 +1,28 @@
+class bike
+{
+	String name;
+	double price;
+	String color;
+	static String owner="GIRI";
+	public bike(String n,double p,String c)
+	{
+		name=n;
+		price=p;
+		color=c;
+	}
+	public void run()
+	{
+		System.out.println("running");
+	}
+	public void stop()
+	{
+		System.out.println("stopping");
+	}
+	public void details()
+	{
+		System.out.println("bike name:"+name);
+		System.out.println("bike price:"+price);
+		System.out.println("bike color:"+color);
+		System.out.println("bike owner:"+owner);
+	}
+}

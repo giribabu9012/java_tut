@@ -1,0 +1,27 @@
+import java.util.*;
+class binarysearch 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static boolean bin(int[]a,int b) 
+	{
+		int l=0,m=a.length-1,n=(l+m)/2;
+		while(l<=m){
+			if(b==a[n])
+				return true;
+			else if(b<a[n])
+				m=n-1;
+			else if(b>a[n])
+				l=n+1;
+				n=(l+m)/2;
+		}
+		return false;
+	}
+	public static void main(String []args)
+	{
+		int []a={10,20,30,40,50,60};
+		System.out.println("Enter a number:");
+		int b=sc.nextInt();
+		System.out.println("a"+Arrays.toString(a));
+		System.out.println(bin(a,b)? "present":"not present");
+	}
+}
