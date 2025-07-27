@@ -1,0 +1,10 @@
+class string1 
+{
+	public static void main(String[] args) 
+	{
+		String s="Giri";
+		String s1=new String("Babu");
+		System.out.println(s+ "-" +s.length());
+		System.out.println(s1+ "-" +s1.length());
+	}
+}

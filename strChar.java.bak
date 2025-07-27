@@ -1,0 +1,18 @@
+class strChar 
+{
+	public static void main(String[] args) 
+	{
+		String s="abacdab";
+		char r='a';
+		char n='g';
+		char[]a=s.toCharArray();
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]==r)
+			a[i]=n;
+		}
+		System.out.println(s);
+		//String c=new String(a);
+		//	System.out.println(c);
+	}
+}

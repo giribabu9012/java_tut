@@ -1,0 +1,31 @@
+import java.util.*;
+class trappingrainwater 
+{
+	public static int watercollected(int[]a)
+	{
+		int[]lmax=new int[a.length];
+		lmax[0]=a[0];
+		for (int i=0;i<a.length ;i++ )
+		{
+			lmax[i]=Math.max(a[i],lmax[i-1]);
+		}
+		int []rmax=new int[a.length];
+		rmax[a.length-1]=a[a.length-1];
+		for (int i=a.length-2;i>=0 ;i-- )
+		{
+			rmax[i]=Math.max(a[i],rmax[i+1]);
+		}
+		int  sum=0;
+		for(int i=0;i<a.length-1;i++)
+		{
+			int b=Math.min(lmax[i],rmax[i]);
+			sum=sum+b-a[i];
+		}
+		return sum;
+	}
+	public static void main(String[] args) 
+	{
+		int[]a={4,2,0,3,2,5};
+		System.out.println("Total:"+watercollected(a));
+	}
+}

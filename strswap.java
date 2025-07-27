@@ -1,0 +1,30 @@
+import java.util.Arrays;
+class strswap 
+{
+	public static void main(String[] args) 
+	{
+		String s="hi how are you?";
+		String []s1=s.split(" ");
+		String ans=" ";
+		for (int i=0;i<s1.length;i++)
+		{
+			ans+=rev(s1[i]+" ");
+		}
+		System.out.println(s);
+		System.out.println(ans);
+	}
+	public static String rev(String s)
+	{
+		char []a=s.toCharArray();
+		int l=0,r=a.length-1;
+		while(l<r)
+		{
+			char temp=a[l];
+				a[l]=a[r];
+				a[r]=temp;
+				l++;
+				r--;
+		}
+		return new String(a);
+	}
+}

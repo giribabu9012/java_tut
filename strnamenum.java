@@ -1,0 +1,15 @@
+class strnamenum 
+{
+	public static void main(String[] args) 
+	{
+		String s="G4I8R2I6";
+		char a[]= s.toCharArray();
+		int sum=0;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]>='0' && a[i]<='9')
+				sum= sum+a[i]-48;
+		}
+		System.out.println(sum);
+	}
+}

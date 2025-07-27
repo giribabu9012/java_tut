@@ -1,0 +1,25 @@
+class xylem 
+{
+	public static void main(String[] args) 
+	{
+		int a=1122;
+		int num=a;
+		int sum=0;
+		int last=a%10;
+		a=a/10;
+		while(a>9)
+		{
+			sum=sum+a% 10;
+			a=a/10;
+		}
+			if((a+last)==sum)
+			{
+				System.out.print("It is a xylem");
+			}
+			else
+			{
+				System.out.print("It is not a xylem");
+			}
+		}
+	}
+

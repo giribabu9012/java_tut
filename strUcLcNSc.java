@@ -1,0 +1,26 @@
+import java.util.*;
+class strUcLcNSc 
+{
+	public static void main(String[] args) 
+	{
+		String s1="a8D8Dg$reH";
+		char []a=s1.toCharArray();
+		int uc=0,lc=0,n=0,sc=0;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]>='A' && a[i]<='Z')
+				uc++;
+			else if(a[i]>='a' && a[i]<='z')
+				lc++;
+			else if(a[i]>='0'&& a[i]<='9')
+				n++;
+			else
+				sc++;	
+		}
+		System.out.println("s="+s1);
+		System.out.println("Uppercase="+uc);
+		System.out.println("Lowercase="+lc);
+		System.out.println("Number="+n);
+		System.out.println("Special character="+sc);
+	}
+}
