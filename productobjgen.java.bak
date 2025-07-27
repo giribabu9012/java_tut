@@ -1,0 +1,12 @@
+class productobjgen 
+{
+	public static void main(String[] args) 
+	{
+		product p1=product.getproduct("Shirt",700);
+		product p2=product.getproduct("Pant",950);
+		System.out.println("Name:"+p1.getproduct());
+		System.out.println("price:"+p1.getproduct());
+		System.out.println("Name:"+p2.getproduct());
+		System.out.println("price:"+p2.getproduct());
+	}
+}

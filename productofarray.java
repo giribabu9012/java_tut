@@ -1,0 +1,31 @@
+import java.util.*;
+class productofarray 
+{
+	public static int cal(int [] a) 
+	{
+		int k=0;
+		int []res=new int[a.length];
+		{
+		for(int i=0;i<a.length;i++)
+		{
+			int ans=1;
+			for(int j=0;j<a.length;j++)
+			{
+				if(i!=j)
+				{
+					ans=ans*a[i];
+				}
+			}
+			res[k++]=ans;
+		}
+		return ans;		
+	}
+	public static void main(String []args)
+		{
+		int []a={1,2,3,4};
+		int []res= cal(a);
+		System.out.println(Arrays.toString(a));
+		System.outprintln(Arrays.toString(res));
+		}
+	}
+}

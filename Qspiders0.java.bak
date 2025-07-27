@@ -1,0 +1,11 @@
+class Qspiders 
+{
+	public static void main(String[] args) 
+	{
+		char a="Qspiders";
+		for(int a=1;a<=10;a++)
+		{
+		System.out.println(a);
+		}
+	}
+}

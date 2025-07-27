@@ -1,0 +1,18 @@
+class personobjgen 
+{
+	public static void main(String[] args) 
+	{
+		person p1=new person("bubesh",23,"male","stellar.nyx");
+		person p2=new person("Gowtham",17,"male","mac_07");
+		person p3=new person("prem",30,"male","premmsd");
+		person p4=new person("gaja",16,"male","gxjx");
+		person p5=new person("naveen",12,"male","naveen.350");
+		person[]p={p1,p2,p3,p4,p5};
+		for(int i=0;i<p.length;i++)
+		{
+			if(p[i].age<18)
+			{
+				
+		System.out.println("Hello World!");
+	}
+}
