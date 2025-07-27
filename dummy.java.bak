@@ -1,0 +1,146 @@
+import java.util.*;
+
+class dummy {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) throws Exception {
+        System.out.println("\t\t\t WELCOME TO FORUM MALL\t\t\t");
+        System.out.println("CHOOSE YOUR SHOP:");
+        System.out.println("\t\t\t1.RARE RABBIT \n2.CELIO \n3.JACK n JONES");
+        System.out.println("\t\t\t WHAT YOU WANT FROM THESE SHOPS:");
+        int a = sc.nextInt();
+        Thread.sleep(5000);
+
+        switch (a) {
+            case 1: {
+                System.out.println("WELCOME TO RARE RABBIT");
+                System.out.println("COLLECTIONS OF RARE RABBIT:\n 1.Dyes T-Shirt \n2.Baggy Mens \n3.Cord-Set");
+                System.out.println("SELECT YOUR WEAR:");
+                int b = sc.nextInt();
+                switch (b) {
+                    case 1: {
+                        double c = 999.0;
+                        System.out.println("QUANTITY OF AN WEAR:");
+                        double d = sc.nextInt();
+                        double e = c * d;
+                        System.out.println("PRICE OF DYES T-SHIRT:" + e);
+                        System.out.println("ENTER 'S' TO CONFIRM OR 'N' TO REJECT:");
+                        char product_confirm = sc.next().charAt(0);
+                        if (product_confirm == 'S' || product_confirm == 's') {
+                            System.out.println("\t\t\tREDIRECTING TO THE PAYMENT METHOD");
+                            Thread.sleep(3000);
+                            System.out.println("\t\t\tSELECT THE MODE OF PAYMENT");
+                            System.out.println("\t\t\t1.GPAY");
+                            System.out.println("\t\t\t2.PHONEPE");
+                            int payment_mode = sc.nextInt();
+                            if (payment_mode == 1) {
+                                System.out.println("\t\t\t********GPAY********");
+                                System.out.print("PLEASE ENTER YOUR TOTAL BILL:" + e);
+                                System.out.print("ENTER THE TOTAL AMOUNT:");
+                                double user_enter_bill = sc.nextDouble();
+                                if (e == user_enter_bill) {
+                                    System.out.println("\t\t\tSENDING OTP TO YOUR REGISTERED NUMBER");
+                                    int sys_otp = (int) (Math.random() * 9999 + 9999);
+                                    Thread.sleep(4000);
+                                    System.out.println("ENTER THE OTP");
+                                    Thread.sleep(3000);
+                                    int user_otp = sc.nextInt();
+                                    if (sys_otp == user_otp) {
+                                        System.out.println("\t\t\tVERIFYING YOUR OTP");
+                                        Thread.sleep(3000);
+                                        System.out.println("\t\t\tPRODUCT PURCHASED");
+                                    } else {
+                                        System.out.println("\t\t\tPRODUCT DENIED");
+                                    }
+                                }
+                            } else if (payment_mode == 2) {
+                                // Handle PHONEPE payment logic here
+                            }
+                        } else if (product_confirm == 'n' || product_confirm == 'N') {
+                            System.out.println("\t\t\tPRODUCT DENIED");
+                        }
+                        break;
+                    }
+                    case 2: {
+                        double f = 1299.0;
+                        System.out.println("QUANTITY OF AN WEAR:");
+                        double g = sc.nextDouble();
+                        double h = f * g;
+                        System.out.println("PRICE OF BAGGY MENS:" + h);
+                        System.out.println("ENTER 'S' TO CONFIRM OR 'N' TO REJECT:");
+                        char product_confirm1 = sc.next().charAt(0);
+                        if (product_confirm1 == 'S' || product_confirm1 == 's') {
+                            System.out.println("\t\t\tREDIRECTING TO THE PAYMENT METHOD");
+                            Thread.sleep(3000);
+                            System.out.println("\t\t\tSELECT THE MODE OF PAYMENT");
+                            System.out.println("\t\t\t1.GPAY");
+                            System.out.println("\t\t\t2.PHONEPE");
+                            int payment_mode1 = sc.nextInt();
+                            if (payment_mode1 == 1) {
+                                System.out.println("\t\t\t********GPAY********");
+                                System.out.print("PLEASE ENTER YOUR TOTAL BILL:" + h);
+                                System.out.print("ENTER THE TOTAL AMOUNT:");
+                                double user_enter_bills = sc.nextDouble();
+                                if (h == user_enter_bills) {
+                                    System.out.println("\t\t\tSENDING OTP TO YOUR REGISTERED NUMBER");
+                                    int sys_otp1 = (int) (Math.random() * 9999 + 9999);
+                                    Thread.sleep(4000);
+                                    System.out.println("ENTER THE OTP");
+                                    Thread.sleep(3000);
+                                    int user_otp1 = sc.nextInt();
+                                    if (sys_otp1 == user_otp1) {
+                                        System.out.println("\t\t\tVERIFYING YOUR OTP");
+                                        Thread.sleep(3000);
+                                        System.out.println("\t\t\tPRODUCT PURCHASED");
+                                    }
+                                }
+                            } else if (payment_mode1 == 2) {
+                                // Handle PHONEPE logic here
+                            }
+                        }
+                        break;
+                    }
+                    case 3: {
+                        double i = 799.0;
+                        System.out.println("QUANTITY OF AN WEAR:");
+                        double j = sc.nextDouble();
+                        double k = i * j;
+                        System.out.println("PRICE OF CORD-SET:" + k);
+                        System.out.println("ENTER 'S' TO CONFIRM OR 'N' TO REJECT:");
+                        char product_confirm2 = sc.next().charAt(0);
+                        if (product_confirm2 == 'S' || product_confirm2 == 's') {
+                            System.out.println("\t\t\tREDIRECTING TO THE PAYMENT METHOD");
+                            Thread.sleep(3000);
+                            System.out.println("\t\t\tSELECT THE MODE OF PAYMENT");
+                            System.out.println("\t\t\t1.GPAY");
+                            System.out.println("\t\t\t2.PHONEPE");
+                            int payment_mode2 = sc.nextInt();
+                            if (payment_mode2 == 1) {
+                                System.out.println("\t\t\t********GPAY********");
+                                System.out.print("PLEASE ENTER YOUR TOTAL BILL:" + k);
+                                System.out.print("ENTER THE TOTAL AMOUNT:");
+                                double user_enter_bill2 = sc.nextDouble();
+                                if (k == user_enter_bill2) {
+                                    System.out.println("\t\t\tSENDING OTP TO YOUR REGISTERED NUMBER");
+                                    int sys_otp2 = (int) (Math.random() * 9999 + 9999);
+                                    Thread.sleep(4000);
+                                    System.out.println("ENTER THE OTP");
+                                    Thread.sleep(3000);
+                                    int user_otp2 = sc.nextInt();
+                                    if (sys_otp2 == user_otp2) {
+                                        System.out.println("\t\t\tVERIFYING YOUR OTP");
+                                        Thread.sleep(3000);
+                                        System.out.println("\t\t\tPRODUCT PURCHASED");
+                                    }
+                                }
+                            } else if (payment_mode2 == 2) {
+                                // Handle PHONEPE logic here
+                            }
+                        }
+                        break;
+                    }
+                }
+               // break;//
+            
+
+            // Similar structure for cases 2 (CELIO) and 3

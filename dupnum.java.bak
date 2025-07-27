@@ -1,0 +1,27 @@
+class dupnum 
+{
+	public static void main(String[] args) 
+	{
+		int[]a={10,20,20,10,23,30,14};
+		int b=Integer.MIN_VALUE;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==b)
+				continue;
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(a[i]==a[j])
+				{
+					a[j]=b;
+				}
+			}
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]!=b)
+			{
+				System.out.print(a[i]);
+			}
+		}
+	}
+}

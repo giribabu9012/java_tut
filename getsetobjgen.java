@@ -1,0 +1,36 @@
+class getsetobjgen 
+{
+	public static void main(String[] args) throws Exception
+	{
+		getset g1=new getset("bubesh",22,"bubesh@gmail.com");
+		getset g2=new getset("gowtham",21,"gowtham@gmail.com");
+		System.out.println("name:"+g1.getname());
+		System.out.println("age:"+g1.getage());
+		System.out.println("email:"+g1.getemail());
+		System.out.println("------------------------");
+		System.out.println("name:"+g2.getname());
+		System.out.println("age:"+g2.getage());
+		System.out.println("email:"+g2.getemail());
+		System.out.println("------------------------");
+		Thread.sleep(3000);
+		g1.setname("gaja");
+		g1.setage(22);
+		g1.setemail("gaja@gmail.com");
+		System.out.println("after changing g1");
+		System.out.println("name:"+g1.getname());
+		System.out.println("age:"+g1.getage());
+		System.out.println("email:"+g1.getemail());
+		System.out.println("------------------------");
+	    g2.setname("giri");
+		g2.setage(18);
+		g2.setemail("giri@gmail.com");
+		System.out.println("after changing g2");
+		System.out.println("name:"+g2.getname());
+		System.out.println("age:"+g2.getage());
+		System.out.println("email:"+g2.getemail());
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,20 @@
+class employeeobjgen 
+{
+	public static void main(String[] args) 
+	{
+		employee e1=new employee("bubesh",1,90000);
+		employee e2=new employee("gaja",2,29000);
+		employee e3=new employee("naveen",3,20000);
+		employee e4=new employee("gowtham",4,50000);
+		employee e5=new employee("prem",5,9300);
+		
+		employee[]emp={e1,e2,e3,e4,e5};
+		for(int i=0;i<emp.length;i++)
+			{
+		if(emp[i].esal>30000)
+			{
+				emp[i].details();
+			}
+			}
+	}
+}

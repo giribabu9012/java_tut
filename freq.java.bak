@@ -1,0 +1,26 @@
+class freq 
+{
+	public static void freqq(String s)
+	{
+		char[]a=s.toCharArray();
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==' ')
+				continue;
+			int count =1;
+			for(int j=i+1;i<a.length;i++)
+			{
+				if(a[i]==a[j])
+					count++;
+				a[j]=' ';
+				}
+			}
+		System.out.println(a[i]+":"+count);
+		}	
+	
+	public static void main(String[] args) 
+	{ 
+		String s="Giribabu";
+		freqq(s);
+	}
+}

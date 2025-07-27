@@ -1,0 +1,10 @@
+class Html 
+{
+	public static void main(String[] args) 
+	{
+		while(count=true)
+			{
+		System.out.println("HTML");
+			}
+	}
+}

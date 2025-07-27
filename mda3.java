@@ -1,0 +1,31 @@
+import java.util.*;
+class mda3 
+{
+	public static int pal(int num)
+	{
+		int temp=num;
+		int rev=0;
+		while(num>0)
+		{
+			rev=rev*10+num%10;
+			num=num/10;
+		}
+		if(temp==rev)
+			return -1;
+			return rev;
+	}
+	public static void main(String []args) 
+	{
+		int[][]a={{11,34,42},
+					{23,74,44},
+					{43,88,27}};
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+		System.out.print(pal(a[i][j])+" ");
+			}
+			System.out.println( );
+		}
+	}
+}

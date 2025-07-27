@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Input
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("SELECT A LANGUAGE:");
+		System.out.println("1.JAVA \n2.SQL \n3.SELENIUM");
+		System.out.println("1.TABREZ \n2.NAGARAJ \n3.NIKHIL");
+		int a=sc.nextInt();
+		switch(a)
+		{
+			case 1:{
+				System.out.print("TABREZ");
+				break;}
+			case 2:{
+				System.out.print("NAGARAJ");
+			    break;}
+			case 3:{
+				System.out.print("NIKHIL");
+			    break;}
+			case 4:{
+				System.out.print("INVALID");
+			    break;}				
+		}
+			
+	}
+}

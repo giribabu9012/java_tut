@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Cricket
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("CRICKET TEAM");
+		System.out.println("1.MADHAVARAM PREMIER LEAGUE \n 2.ROYAPURAM PREMIER LEAGUE");
+		System.out.println("SELECT THE TEAM:");
+		int a=sc.nextInt();
+		switch(a)
+		{
+			case 1:{
+				System.out.println("SELECTED YOUR MADHAVARAM PREMIER LEAGUE");
+				System.out.println("YOUR TEAM PLAYERS ARE \n1.GAJA \n2.PREM");
+				System.out.println("SELECT YOUR PLAYERS:");
+				int b=sc.nextInt();
+				switch(b)
+				{
+					case 1:System.out.print("DANCING BATSMAN");
+					break;
+					case 2:System.out.print("CALM BOWLER");
+				}
+				break;
+			}
+					case 2:{
+						System.out.println("SELECTER YOUR ROYAPURAM PREMIER LEAGUE");
+						System.out.println("YOUR TEAM PLAYERS ARE \n1.BUBESH \n2.NAVEEN");
+				break;
+					}
+					
+				}
+		}
+	
+

@@ -1,0 +1,67 @@
+import java.util.*;
+class mda5 
+{
+	public static void abi(int [][]a,int[][]b)
+	{
+		int[][]res=new int[a.length][];
+		for (int i=0;i<a.length ;i++ )
+		{
+			res[i]=new int[a[i].length];
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				res[i][j]=a[i][j]+b[i][j];
+				//res[i][j]=a[i][j]*b[i][j];
+			}
+			System.out.println(Arrays.toString(res[i]));
+			
+		}
+		System.out.println();
+		
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				//res[i][j]=a[i][j]+b[i][j];
+				res[i][j]=a[i][j]*b[i][j];
+			}
+			System.out.println(Arrays.toString(res[i]));
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				//res[i][j]=a[i][j]+b[i][j];
+				res[i][j]=a[i][j]-b[i][j];
+			}
+			System.out.println(Arrays.toString(res[i]));
+		}
+		System.out.println();
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				//res[i][j]=a[i][j]+b[i][j];
+				res[i][j]=a[i][j]/b[i][j];
+			}
+			System.out.println(Arrays.toString(res[i]));
+		}
+		}
+		
+	public static void main(String[] args) 
+	{
+		int [][]a={
+			{1,2,3},
+			{4,5,6},
+			{7,8,9}};
+		int [][]b={
+			{1,2,3},
+			{4,5,6},
+			{7,8,9}};
+		abi(a,b);
+		
+	}
+}

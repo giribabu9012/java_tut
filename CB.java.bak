@@ -1,0 +1,8 @@
+class CB
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Fav car:Honda city");
+		System.out.println("Fav bike:pulsar");
+	}
+}
